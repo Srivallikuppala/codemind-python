@@ -17,4 +17,3 @@ while n_p(r)==True:
     #print(r)
 if n_p(r)==False:
     print(r-m-n)
-    
