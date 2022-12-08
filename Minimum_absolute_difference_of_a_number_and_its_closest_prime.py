@@ -1,27 +1,19 @@
-def pal(n):
-    d=0
-    for i in range(2,int(pow(n,0.5))+1):
+def pr(n):
+    for i in range(2,(n//2)+1):
         if n%i==0:
-            d=1
-    if d==0:
-        return True
+            return False
     else:
-        return False
-
+        return True
 n=int(input())
-#print(n)
-np=0
-pp=n+1
-for i in range(n-1,0,-1):
-    if pal(i):
-        np=i
+np=n
+pp=0
+for i in range(n,1,-1):
+    if pr(i):
+        pp=i
         break
-while pal(pp)==False:
-    pp+=1
-#print(np,pp)
-if pal(n):
-    print('0')
-elif n-np>pp-n:
-    print(pp-n)
+while pr(np)==False:
+    np+=1
+if np-n<n-pp:
+    print(np-n)
 else:
-    print(n-np)
+    print(n-pp)
