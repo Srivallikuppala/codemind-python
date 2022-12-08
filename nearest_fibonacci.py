@@ -1,4 +1,4 @@
-def pal(n):
+def fib(n):
     a=0
     b=1
     c=a+b
@@ -21,10 +21,10 @@ n=int(input())
 np=0
 pp=n+1
 for i in range(n-1,0,-1):
-    if pal(i):
+    if fib(i):
         np=i
         break
-while pal(pp)==False:
+while fib(pp)==False:
     pp+=1
 if pp-n<n-np:
     print(pp)
