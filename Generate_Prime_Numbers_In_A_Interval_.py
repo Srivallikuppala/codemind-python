@@ -1,15 +1,13 @@
-def prime(n):
-    c=0
+def pr(n):
+    if n==1:
+        return False
     for i in range(2,int(pow(n,0.5))+1):
         if n%i==0:
-            c=1
-            break
-    if c==0:
-        return True
+            return False
     else:
-        return False
+        return True
 n=int(input())
 m=int(input())
 for i in range(n+1,m):
-    if prime(i):
-       print(i) 
+    if pr(i):
+        print(i)
