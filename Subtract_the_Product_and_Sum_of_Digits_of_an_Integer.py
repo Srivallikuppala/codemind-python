@@ -1,9 +1,9 @@
 n=int(input())
-s=0
-m=1
-while n!=0:
+sum=0
+mul=1
+while n>0:
     d=n%10
-    m=m*d
-    s+=d
+    sum=sum+d
+    mul=mul*d
     n=n//10
-print(m-s)    
+print(mul-sum)
