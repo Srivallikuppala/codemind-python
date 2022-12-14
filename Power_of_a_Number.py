@@ -1,3 +1,3 @@
-x,y,m=map(int,input().split())
-r=int(pow(x,y))
-print(r%m)
+a,b,m=map(int,input().split())
+c=a**b
+print(c%m)
