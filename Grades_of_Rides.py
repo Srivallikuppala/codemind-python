@@ -1,14 +1,13 @@
-h,s,sp=map(int,input().split())
-if h>50 and s>60 and sp>100:
-    g=10
-elif h>50 and s>60 and sp<=100:
-    g=9
-elif h<=50 and s>60 and sp>100:
-    g=8
-elif h>50 and s<=60 and sp>100:
-    g=7
-elif h>50 or s>60 or sp>100:
-    g=6
+a,b,c=map(int,input().split())
+if a>50 and b>60 and c>100:
+    print("10")
+elif a>50 and b>60:
+    print("9")
+elif b>60 and c>100:
+    print("8")
+elif a>50 and c>100:
+    print("7")
+elif a>50 or b>60 or c>100:
+    print("6")
 else:
-    g=5
-print(g)
+    print("5")
