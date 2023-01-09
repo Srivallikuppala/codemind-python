@@ -1,24 +1,24 @@
-def pr(n):
-    if n==1:
-        return False
-    for i in range(2,(n//2)+1):
-        if n%i==0:
-            return False
-    else:
-        return True
+import math
 n=int(input())
-#print(n)
-if pr(n)==False:
-    c=1
-else:
-    while n!=0:
-        c=0
-        d=n%10
-        if pr(d)==False:
-            c=1
-            break
-        n=n//10
-if c==1:
+sq=int(math.sqrt(n))
+count=0
+for i in range(2,sq):
+    if(n%i==0):
+        count=count+1
+        break
+if(count!=0):
     print("Not Mega Prime")
 else:
-    print("Mega Prime")
+    temp=n
+    k=0
+    while temp>0:
+        d=temp%10
+        if(d==2 or d==3 or d==5 or d==7):
+            d=d
+        else:
+            print("Not Mega Prime")
+            k=1
+            break
+        temp=temp//10
+    if(k!=1):
+        print("Mega Prime")
