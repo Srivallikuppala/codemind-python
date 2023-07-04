@@ -1,6 +1,6 @@
-n=input()
-n=n.split(' ')
-for i in n:
-    i=i[::-1]
-    print(i,end=' ')
-    
+s=input()
+str=s.split()
+res=[]
+for i in str:
+    res.append(i[::-1])
+print(*res)
