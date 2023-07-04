@@ -1,5 +1,4 @@
-n=input()
-n=n.split(' ')
-r=n[::-1]
-n1=' '.join(r)
-print(n1)
+s=input()
+res=[]
+res.append(s[::-1])
+print(*res)
