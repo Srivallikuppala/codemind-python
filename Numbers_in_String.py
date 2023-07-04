@@ -1,7 +1,6 @@
 n=input()
-x=list(n)
-s=0
-for i in x:
-    if i.isdigit():
-        s+=int(i)
-print(s)
+count=0
+for i in n:
+    if(ord(i)>=48 and ord(i)<=57):
+        count=count+(ord(i)-48)
+print(count)
