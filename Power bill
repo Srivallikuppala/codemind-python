@@ -1,0 +1,14 @@
+n = int(input())
+if n < 199 : x = 1.20
+elif n >= 200 and n < 400 : x = 1.40
+elif n >= 400 and n < 600 : x = 1.60
+elif n >= 600 and n < 800 : x = 1.80
+elif n >= 800 : x = 2.00
+b = n*x
+s = 0
+if b >= 400 : s = (15/100)*b
+print('Units Consumed:',n)
+print('Cost per Unit:',"{:.2f}".format(x))
+print('Bill:',"{:.2f}".format(b))
+print('Surcharge:',"{:.2f}".format(s))
+print('Total Amount:',"{:.2f}".format(b+s))
